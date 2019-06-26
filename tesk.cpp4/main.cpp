@@ -127,3 +127,23 @@ int main(int argc, const char * argv[]) {
         stu[i].avepoint=(G_point[1]+G_point[2]+G_point+G_point[3]+G_point[4]+G_point[5])
     }
     ofstream fp3("")
+    if(!fp3)
+    {
+        break;
+    }
+    fp3<<"学校   姓名   编号   分数";
+    for(int j=0;j<7;j++)
+        fp3 <<jude[j].name<<"   ";
+    fp3<<endl;
+    float Max=stu[0].avepoint;int Max_j=0;
+    for(int j=0;j<add;j++)
+    {
+        for(int i=0;i<add;i++)
+        {
+            if(stu[i].avepoint>=Max)
+            {
+                Max=stu[j].avepoint;
+                Max_j=i;
+            }
+        }
+    }
