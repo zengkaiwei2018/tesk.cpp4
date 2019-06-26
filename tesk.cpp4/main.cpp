@@ -146,4 +146,11 @@ int main(int argc, const char * argv[]) {
                 Max_j=i;
             }
         }
+        fp3<<setw(10)<<setiosflags(ios::left)<<stu[Max_j].name;
+        fp3<<setw(9)<<setiosflags(ios::left)<<stu[Max_j].collage;   }
+    fp3<<setw(8)<<setiosflags(ios::left)<<stu[Max_j].Num;
+    fp3<<setw(7)<<setiosflags(ios::left)<<stu[Max_j].avepoint;
+    for(int k=0;k<7;k++)
+    {
+        
     }
